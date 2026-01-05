@@ -3,128 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marti&Friends | Valorant Rank Ascension & Coaching</title>
+    <title>Marti&Friends | Online Kochkurse Wien</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Fokus-Stile für Barrierefreiheit (WCAG) */
-        :focus {
-            outline: 3px solid #00F0FF;
-            outline-offset: 2px;
-        }
-        .valorant-gradient {
-            background: linear-gradient(135deg, #1A1A1B 0%, #0f1923 100%);
-        }
+        :focus { outline: 3px solid #E63946; outline-offset: 2px; }
+        .kitchen-bg { background-color: #F1FAEE; color: #1D3557; }
+        .accent-red { background-color: #E63946; }
     </style>
 </head>
-<body class="valorant-gradient text-white font-sans leading-normal tracking-normal">
+<body class="kitchen-bg font-sans">
 
-    <nav class="border-b border-gray-800 p-4 sticky top-0 bg-opacity-90 bg-black z-50" aria-label="Hauptnavigation">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold tracking-tighter text-[#00F0FF]">MARTI&FRIENDS</a>
-            <ul class="flex space-x-6 text-sm uppercase tracking-widest">
-                <li><a href="#services" class="hover:text-[#00F0FF] transition">Services</a></li>
-                <li><a href="#about" class="hover:text-[#00F0FF] transition">About Us</a></li>
-                <li><a href="#license" class="hover:text-[#00F0FF] transition">Lizenz</a></li>
-                <li><a href="#impressum" class="hover:text-[#00F0FF] transition">Impressum</a></li>
-            </ul>
+<nav class="bg-white shadow-md p-4 sticky top-0 z-50" aria-label="Hauptnavigation">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#home" class="text-2xl font-bold text-[#E63946]">MARTI&FRIENDS</a>
+        <ul class="flex space-x-6 text-sm font-semibold uppercase">
+            <li><a href="#kurse" class="hover:text-[#E63946] transition">Kochkurse</a></li>
+            <li><a href="#about" class="hover:text-[#E63946] transition">Über uns</a></li>
+            <li><a href="#license" class="hover:text-[#E63946] transition">AGB & Lizenz</a></li>
+            <li><a href="#impressum" class="hover:text-[#E63946] transition">Impressum</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header id="home" class="container mx-auto py-20 px-4 text-center">
+    <h1 class="text-5xl font-black text-[#1D3557] mb-4">KOCHEN LERNEN MIT <span class="text-[#E63946]">FREUNDEN</span>.</h1>
+    <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Von Wien in deine Küche: Unsere Online-Live-Kurse bringen den Geschmack der Welt direkt zu dir am Herd.
+    </p>
+    <a href="#kurse" class="accent-red text-white px-8 py-4 font-bold rounded shadow-lg hover:opacity-90 transition uppercase">Kurs finden</a>
+</header>
+
+<section id="kurse" class="container mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-10 border-l-8 border-[#E63946] pl-4">AKTUELLE TERMINE</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-[#E63946]">
+            <h3 class="text-xl font-bold mb-2 text-[#457B9D]">Wiener Klassiker - Online Kurs</h3>
+            <p class="text-gray-600 mb-4 italic">Jeden Dienstag, 18:30 Uhr</p>
+            <p class="text-2xl font-bold text-[#1D3557] mb-4">€ 29,00</p>
+            <button onclick="alert('Mock-Order: Kursplatz reserviert!')" class="w-full accent-red text-white py-3 font-bold rounded">Jetzt buchen</button>
         </div>
-    </nav>
+        <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-[#A8DADC]">
+            <h3 class="text-xl font-bold mb-2 text-[#457B9D]">Private Coaching (1-on-1)</h3>
+            <p class="text-gray-600 mb-4 italic">Termine nach individueller Vereinbarung</p>
+            <p class="text-2xl font-bold text-[#1D3557] mb-4">€ 89,00 / Session</p>
+            <button onclick="alert('Anfrage gesendet!')" class="w-full bg-[#457B9D] text-white py-3 font-bold rounded">Anfrage stellen</button>
+        </div>
+    </div>
+</section>
 
-    <header id="home" class="container mx-auto py-20 px-4 text-center">
-        <h1 class="text-5xl md:text-7xl font-black mb-4">DEIN WEG AUS DER <span class="text-[#00F0FF]">ELO-HELL</span>.</h1>
-        <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            Professionelles Coaching und Rank-Ascension für ambitionierte Spieler, die ihr wahres Potenzial in Valorant entfesseln wollen.
+<section id="about" class="container mx-auto py-16 px-4">
+    <div class="bg-white p-10 rounded-xl shadow-inner">
+        <h2 class="text-3xl font-bold mb-6 text-[#1D3557]">Die Marke Marti&Friends</h2>
+        <p class="mb-6 leading-relaxed text-gray-700">
+            Unsere Marke steht für Gemeinschaft und kulinarische Qualität. Wir haben unsere Markenformen beim Österreichischen Patentamt geschützt:
         </p>
-        <a href="#services" class="bg-[#00F0FF] text-black px-8 py-4 font-bold rounded-sm hover:bg-white transition uppercase">Jetzt Rank pushen</a>
-    </header>
+        <ul class="grid md:grid-cols-3 gap-4 text-sm">
+            <li class="p-4 border rounded"><strong>Wortmarke:</strong> MARTI&FRIENDS</li>
+            <li class="p-4 border rounded"><strong>Wort-Bild-Marke:</strong> Unser Logo (Kochlöffel-Blitz-Kombination)</li>
+            <li class="p-4 border rounded"><strong>Nizza-Klasse 41:</strong> Ausbildung; Unterhaltung; Veranstaltung von Kochkursen.</li>
+        </ul>
+    </div>
+</section>
 
-    <section id="services" class="container mx-auto py-16 px-4">
-        <h2 class="text-3xl font-bold mb-10 border-l-4 border-[#00F0FF] pl-4">UNSERE SERVICES</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-gray-900 p-6 border border-gray-800 hover:border-[#00F0FF] transition">
-                <h3 class="text-xl font-bold mb-2">Rank Up: Bronze to Gold</h3>
-                <p class="text-gray-400 mb-4 text-sm">Gezielte Unterstützung, um die Grundlagen zu meistern und Silber hinter dir zu lassen.</p>
-                <p class="text-2xl font-bold text-[#00F0FF] mb-4">€ 49,00</p>
-                <button onclick="alert('Mock-Order: Service wurde dem Warenkorb hinzugefügt!')" class="w-full border border-[#00F0FF] py-2 hover:bg-[#00F0FF] hover:text-black transition">Buchen</button>
-            </div>
-            <div class="bg-gray-900 p-6 border border-gray-800 hover:border-[#00F0FF] transition">
-                <h3 class="text-xl font-bold mb-2">1-on-1 Aim Coaching</h3>
-                <p class="text-gray-400 mb-4 text-sm">60 Minuten Intensivtraining mit unseren Top-2-Mitarbeitern (Radiant Peak).</p>
-                <p class="text-2xl font-bold text-[#00F0FF] mb-4">€ 35,00 / Std</p>
-                <button onclick="alert('Mock-Order: Termin-Widget würde hier öffnen.')" class="w-full border border-[#00F0FF] py-2 hover:bg-[#00F0FF] hover:text-black transition">Termin wählen</button>
-            </div>
-        </div>
-    </section>
+<section id="license" class="container mx-auto py-16 px-4">
+    <h2 class="text-2xl font-bold mb-6">Nutzungsrechte & Haftung</h2>
+    <div class="bg-gray-100 p-6 rounded text-sm text-gray-700 space-y-4 border-l-4 border-gray-400">
+        <p><strong>Urheberrecht:</strong> Alle Kursunterlagen und Video-Streams sind urheberrechtlich geschützt (§ 1 UrhG). Sie erhalten eine einfache Werknutzungsbewilligung für den privaten Gebrauch.</p>
+        <p><strong>Haftungsausschluss:</strong> Die Teilnahme an den Kochkursen erfolgt auf eigene Gefahr. Marti&Friends haftet nicht für Verletzungen (Schnittwunden, Verbrennungen) oder allergische Reaktionen im Rahmen der Eigenzubereitung. Die Haftung für leichte Fahrlässigkeit wird ausgeschlossen (§ 879 ABGB).</p>
+    </div>
+</section>
 
-    <hr class="border-gray-800 my-10">
-
-    <section id="about" class="container mx-auto py-16 px-4">
-        <h2 class="text-3xl font-bold mb-6">About Marti&Friends</h2>
-        <div class="grid md:grid-cols-2 gap-12">
+<footer id="impressum" class="bg-[#1D3557] text-white py-16 px-4">
+    <div class="container mx-auto">
+        <div class="grid md:grid-cols-3 gap-12 text-sm">
             <div>
-                <p class="text-gray-400 mb-4">
-                    Gegründet in Wien, besteht unser Team aus Marti und zwei weiteren Experten. Wir glauben, dass jeder Spieler das Zeug zum Champion hat – manchmal fehlt nur der richtige Guide.
-                </p>
-                <h4 class="font-bold text-[#00F0FF] mb-2 text-sm uppercase">Unsere Markenformen (Nizza 41, 42):</h4>
-                <ul class="text-sm text-gray-500 space-y-2">
-                    <li><strong>Wortmarke:</strong> "MARTI&FRIENDS" – Schutz unseres Namens.</li>
-                    <li><strong>Farbgeltungsmarke:</strong> Unser ikonisches "Ascension-Cyan" (#00F0FF).</li>
-                    <li><strong>Positionsmarke:</strong> Der stilisierte Blitz am Rand unserer Interface-Elemente.</li>
-                </ul>
-            </div>
-            <div class="bg-gray-800 h-48 flex items-center justify-center border-dashed border-2 border-gray-600">
-                <span class="text-gray-500 italic">[Marken-Logo Placeholder]</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="license" class="container mx-auto py-16 px-4 bg-gray-900 rounded-lg">
-        <h2 class="text-2xl font-bold mb-6">Nutzungsrechte & Lizenz</h2>
-        <div class="text-sm text-gray-400 space-y-4">
-            <p>Mit dem Kauf unserer Analyse-Software erhalten Sie eine einfache, zeitlich begrenzte Werknutzungsbewilligung (§ 24 UrhG).</p>
-            <p><strong>Haftungsbeschränkung:</strong> Wir haften nicht für Spielsperren durch Drittanbieter (Riot Games). Die Haftung für leichte Fahrlässigkeit wird ausgeschlossen (gem. österreichischem AGB-Recht).</p>
-        </div>
-    </section>
-
-    <section id="privacy" class="container mx-auto py-16 px-4">
-        <h2 class="text-2xl font-bold mb-4">Datenschutz & Barrierefreiheit</h2>
-        <div class="grid md:grid-cols-2 gap-8 text-sm text-gray-400">
-            <div>
-                <h3 class="text-white font-bold mb-2">Datenschutzerklärung (DSGVO)</h3>
-                <p>Wir verarbeiten Ihre Riot-ID ausschließlich zur Vertragserfüllung (Art 6 Abs 1 lit b DSGVO). Es erfolgt kein Datentransfer in Drittstaaten ohne Ihre explizite Zustimmung.</p>
+                <h3 class="font-bold mb-4 text-[#A8DADC]">UNTERNEHMEN</h3>
+                <p>Marti&Friends Kulinarik OG</p>
+                <p>Mariahilfer Straße 100, 1070 Wien</p>
+                <p>Österreich</p>
             </div>
             <div>
-                <h3 class="text-white font-bold mb-2">Barrierefreiheit</h3>
-                <p>Diese Seite erfüllt WCAG 2.2 AA. Wir nutzen semantisches HTML und garantieren Kontrastverhältnisse von über 4.5:1.</p>
+                <h3 class="font-bold mb-4 text-[#A8DADC]">RECHTLICHES</h3>
+                <p>Firmenbuch: FN 888888 y (HG Wien)</p>
+                <p>UID: ATU12345678</p>
+                <p>Gewerbe: Organisation von Kochkursen</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4 text-[#A8DADC]">OFFENLEGUNG (§ 25 MedG)</h3>
+                <p>Geschäftsführer: Marti [Nachname]</p>
+                <p>Blattlinie: Information und Vermittlung von Kochkenntnissen.</p>
+                <p>E-Mail: kochen@martiandfriends.at</p>
             </div>
         </div>
-    </section>
-
-    <footer id="impressum" class="bg-black py-16 px-4 border-t border-gray-800">
-        <div class="container mx-auto">
-            <h2 class="text-xl font-bold mb-8 text-[#00F0FF]">IMPRESSUM</h2>
-            <div class="grid md:grid-cols-3 gap-8 text-xs text-gray-500 uppercase tracking-widest">
-                <div>
-                    <p class="font-bold text-gray-300">Marti&Friends Digital Services OG</p>
-                    <p>Mariahilfer Straße 100</p>
-                    <p>1070 Wien, Österreich</p>
-                </div>
-                <div>
-                    <p>FN: 888888 y | HG Wien</p>
-                    <p>UID: ATU12345678</p>
-                    <p>Gewerbe: IT-Dienstleistungen</p>
-                </div>
-                <div>
-                    <p>Geschäftsführer: Marti [Nachname]</p>
-                    <p>Blattlinie: Förderung von E-Sports Kompetenz</p>
-                    <p>E-Mail: support@martiandfriends.at</p>
-                </div>
-            </div>
-            <div class="mt-12 pt-8 border-t border-gray-900 text-[10px] text-gray-600">
-                <p>© 2024 Marti&Friends. Diese Website nutzt Medien unter der Riot Games Fan Content Policy. Schriftarten: Inter (SIL Open Font License). Icons: FontAwesome (lizensiert).</p>
-            </div>
+        <div class="mt-10 pt-10 border-t border-gray-700 text-center text-xs">
+            <a href="#" class="underline">Barrierefreiheitserklärung</a> |
+            <a href="#" class="underline">Datenschutzerklärung (DSGVO)</a>
+            <p class="mt-4 text-gray-500">© 2026 Marti&Friends. Alle Rezepte urheberrechtlich geschützt.</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
 </html>
