@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie-Einstellungen | Marti&Friends</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: '#059669' } } } }</script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 dark:text-white transition-colors duration-300">
+<nav class="p-6">
+  <a href="index.html" class="text-brand font-black uppercase tracking-tighter">← Zurück zur App</a>
+</nav>
+
+<main class="py-10 container mx-auto px-6 max-w-2xl">
+  <div class="bg-white dark:bg-slate-900 p-10 rounded-[3rem] shadow-sm border border-slate-100 dark:border-slate-800">
+    <h1 class="text-3xl font-black mb-6 italic text-brand">Präferenzen</h1>
+    <p class="text-sm text-slate-500 mb-10">Hier kannst du die granulare Zustimmung für verschiedene Cookie-Kategorien (gemockt) verwalten.</p>
+
+    <div class="space-y-6">
+      <div class="flex justify-between items-center p-6 bg-slate-50 dark:bg-slate-800 rounded-3xl">
+        <div>
+          <h4 class="font-bold">Essenziell</h4>
+          <p class="text-[10px] text-slate-500 uppercase tracking-widest">Immer Aktiv</p>
+        </div>
+        <div class="w-12 h-6 bg-brand rounded-full relative">
+          <div class="absolute right-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+        </div>
+      </div>
+      <div class="flex justify-between items-center p-6 bg-slate-50 dark:bg-slate-800 rounded-3xl opacity-60">
+        <div>
+          <h4 class="font-bold">Analyse & Marketing</h4>
+          <p class="text-[10px] text-slate-500 uppercase tracking-widest italic">Mock-ID: 98234</p>
+        </div>
+        <input type="checkbox" class="w-6 h-6 accent-brand">
+      </div>
+    </div>
+
+    <button onclick="alert('Einstellungen gespeichert!'); location.href='index.html'" class="mt-12 w-full py-5 bg-brand text-white rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-brand/20">Speichern & Schließen</button>
+  </div>
+</main>
+</body>
+</html>
