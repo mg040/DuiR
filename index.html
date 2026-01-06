@@ -43,6 +43,49 @@
         <a href="cookie.html" class="hover:text-brand">Cookies</a>
     </div>
     <p class="text-[10px] text-slate-500">© 2026 Marti&Friends | Österreichische Rechtslage</p>
+
+
+    <div id="cookie-banner" class="fixed bottom-6 left-6 right-6 md:left-auto md:w-[400px] z-[100] transform translate-y-20 opacity-0 transition-all duration-700">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-[2rem] shadow-2xl">
+            <div class="flex items-center space-x-3 mb-4">
+                <span class="text-2xl">🍪</span>
+                <h4 class="font-black uppercase tracking-widest text-sm text-brand">Cookie-Check</h4>
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                Servus! Wir nutzen (simulierte) Cookies, um dein Kocherlebnis in der Kitchen-Cloud zu verbessern. Gemäß <strong>TKG 2021</strong> benötigen wir dein Okay.
+            </p>
+            <div class="flex space-x-3">
+                <button onclick="acceptCookies()" class="flex-1 bg-brand text-white py-3 rounded-xl font-bold text-xs uppercase tracking-widest hover:scale-105 transition">Akzeptieren</button>
+                <button onclick="closeBanner()" class="flex-1 bg-slate-100 dark:bg-slate-800 py-3 rounded-xl font-bold text-xs uppercase tracking-widest">Ablehnen</button>
+            </div>
+            <div class="mt-4 text-center">
+                <a href="cookies.html" class="text-[10px] text-slate-400 underline uppercase tracking-tighter">Detaillierte Einstellungen</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Logik für das Banner
+        window.onload = function() {
+            const banner = document.getElementById('cookie-banner');
+            // Kleine Verzögerung für den "Flow"-Effekt
+            setTimeout(() => {
+                banner.classList.remove('translate-y-20', 'opacity-0');
+            }, 1000);
+        };
+
+        function acceptCookies() {
+            alert('Cookies akzeptiert (Mock-Prozess). In einem echten Shop würde jetzt das Tracking aktiviert.');
+            closeBanner();
+        }
+
+        function closeBanner() {
+            const banner = document.getElementById('cookie-banner');
+            banner.classList.add('translate-y-20', 'opacity-0');
+            // In einem echten Projekt würde man hier ein 'localStorage' Item setzen
+        }
+    </script>
+
 </footer>
 </body>
 </html>
