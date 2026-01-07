@@ -8,9 +8,21 @@
   <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: '#059669' } } } }</script>
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 dark:text-white">
-<nav class="w-full backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50 bg-white/70 dark:bg-slate-950/70 py-4">
-  <div class="container mx-auto px-6 flex justify-between items-center italic font-black uppercase tracking-tighter text-brand text-2xl">
-    <a href="index.html">Marti&Friends</a>
+<nav class="fixed w-full z-40 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50 bg-white/70 dark:bg-slate-950/70">
+  <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <a href="index.html" class="flex items-center space-x-3 group">
+      <img src="logo.png" alt="Marti&Friends Kochtopf Logo" class="w-12 h-12 object-contain group-hover:scale-105 transition">
+      <span class="text-2xl font-black text-brand tracking-tighter uppercase italic">
+                Marti<span class="text-slate-400">&</span>Friends
+            </span>
+    </a>
+
+    <div class="flex items-center space-x-6 font-bold text-xs uppercase tracking-widest">
+      <a href="shop.html" class="hover:text-brand transition">Shop</a>
+      <a href="about.html" class="hover:text-brand transition">About</a>
+      <a href="contact.html" class="hover:text-brand transition">Kontakt</a>
+      <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full bg-slate-200 dark:bg-slate-800">🌓</button>
+    </div>
   </div>
 </nav>
 
