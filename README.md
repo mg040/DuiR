@@ -4,9 +4,7 @@ Daten und Informatik Recht Praxisbeispiel 1
 
 Ein Webshop der einen statischen online Webstore darstellt in dem Dienstleistungen verkauft werden.
 
-/n/n/n/n
-
-
+<br /><br /><br /><br />
 
 
 Angabe:
